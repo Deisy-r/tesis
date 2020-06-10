@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "es" }}">
+
+  {%- include head.html -%}
+
+  <body>
+    <main class="main" aria-label="Content">
+
+        {%- include navigation.html -%}
+
+        <div class="content">
+            {{ content }}
+        </div>
+    </main>
+  </body>
+  <script src="{{ "/assets/js/showMenu.js" | relative_url }}"></script>
+
+</html>

@@ -1,0 +1,28 @@
+<div class="nav">
+    <div class="navHeader">
+        <a href="/">
+            <div>
+                <img src="{{ "/assets/images/logo.png" | relative_url }}" alt="Logo" class="navLogo">
+            </div>
+        </a>
+        <div class="menuCollapse">
+            <button onclick="showMenu()" class="menu">
+                MENU
+            </button>
+        </div>
+    </div>
+    <ul class="navList" id="myDIV">
+      {% assign posts = site.posts %}
+      {%- for post in posts -%}
+        <li class="{% if post.url == page.url %}active{% endif %}">
+            <a href="{{ post.url | relative_url }}" class="noUnderline">
+                <div class="navItem">
+                    {{ post.title | escape }}
+                </div>
+            </a>
+        </li>
+      {%- endfor -%}
+    </ul>
+</div>
+
+    
