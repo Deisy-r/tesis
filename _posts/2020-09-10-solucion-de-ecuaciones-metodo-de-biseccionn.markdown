@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Método de Bisección"
+title:  "Método de Bisección"
 date:   2020-09-10 18:51:43 -0400
 categories: pagina
 ---
@@ -10,6 +10,7 @@ categories: pagina
 Se considera un intervalo cerrado $[a,b]$, donde la función $f(x)$ cambia de signo, es decir, la imagen $f(a).f(b)<0$. El método consiste en ir dividiendo el intervalo *[a,b]* por la mitad de la siguiente forma: 
 
 - Se toma el punto medio:
+
 $\frac{a+b}{2}$   si   $f\frac {a+b}{2}=0$  ya hemos encontrado la raíz
 $x=\frac {a+b}{2}$. en caso contrario, si  $f(\frac {a+b}{2}).f(b)<0$ entonces hacemos $a_1=\frac {a+b}{2}$ y volvemos a subdividir el nuevo intervalo $[a,b]$. Si, por el contrario, $f(a).f(\frac {a+b}{2})<0$. Entonces haceos $b_1=\frac {a+b}{2}$ y volvemos a empezar las subdivisiones del intervalo $[a,b]$ van aproximando la raíz. 
 

@@ -4,7 +4,7 @@ title:  "MATLAB"
 date:   2020-06-09 18:51:43 -0400
 categories: pagina
 ---
-
+![MATLAB](/home/deisy/Documentos/tesis/matlab.jpg) 
 **Introducción al Software MATLAB**
 
 Matlab (abreviatura de **MAT**rix **LAB**oratory, laboratorio de matrices), es una gran herramienta usada en muchos campos, siendo un sistema de cálculo numérico que permite realizar rápidamente y con exactitud los mismos. Cabe destacar que en esta herramienta podemos manipular matrices, representar datos y funciones, implementar algoritmos y crear interfaces de usuario.
