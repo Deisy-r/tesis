@@ -2,10 +2,33 @@
 layout: default
 ---
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-    <!-- <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1> -->
+    <div class="contentTitle">
+      <small class="postCategory">
+        {% if page.categories contains "in" %}
+          Integración númerica
+        {% elsif page.categories contains "matlab" %}
+          MatLab
+        {% elsif page.categories contains "rpf" %}
+          Representación de punto flotante
+        {% elsif page.categories contains "senluv" %}
+          Solución de ecuaciones no lineales de una variable
+        {% elsif page.categories contains "interpolacion" %}
+          Interpolación
+        {% elsif page.categories contains "edo" %}
+          Ecuaciones diferenciales ordinarias
+        {% elsif page.categories contains "bibliografia" %}
+          Bibliografía
+        {% endif %}
+      </small>
+      <h1 itemprop="name headline">
+        {{ page.title | escape }}
+      </h1>
+    </div>
 
     <div class="post-content e-content" itemprop="articleBody">
+      <div class="contentText">
         {{ content }}
+      </div>
     </div>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>

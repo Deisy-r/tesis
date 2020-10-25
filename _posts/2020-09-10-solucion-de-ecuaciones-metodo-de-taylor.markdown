@@ -2,7 +2,8 @@
 layout: post
 title:  "Método de Taylor"
 date:   2020-09-10 18:51:43 -0400
-categories: pagina
+categories: senluv
+tag: 4
 ---
 
 **Teorema de Taylor**

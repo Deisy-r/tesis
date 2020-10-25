@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Representación de Punto Flotante"
+title:  "Introducción"
 date:   2020-09-10 18:51:43 -0400
-categories: pagina
+categories: rpf
+tag: 0
 ---
 **Representación de punto flotante**
 

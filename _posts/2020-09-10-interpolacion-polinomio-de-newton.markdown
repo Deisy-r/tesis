@@ -2,7 +2,8 @@
 layout: post
 title:  "Polinomio Interpolante de Newton"
 date:   2020-09-10 18:51:43 -0400
-categories: pagina
+categories: interpolacion
+tag: 1
 ---
 
 *Polinomio Interpolante de Newton*

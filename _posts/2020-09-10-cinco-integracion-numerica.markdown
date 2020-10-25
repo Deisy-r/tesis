@@ -2,7 +2,8 @@
 layout: post
 title:  "Integración Númerica"
 date:   2020-09-10 18:51:43 -0400
-categories: pagina
+categories: in
+tag: 0
 ---
 ## INTEGRACIÓN NUMÉRICA
 *Fórmula de Newton-Cotes*

@@ -2,7 +2,8 @@
 layout: post
 title:  "Instructivo"
 date:   2020-09-10 18:51:43 -0400
-categories: pagina
+categories: matlab
+tag: 2
 ---
 
 ![instructivo](/home/deisy/Documentos/tesis/assets/images/manual matlab.png)

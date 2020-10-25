@@ -2,7 +2,8 @@
 layout: post
 title:  "MATLAB"
 date:   2020-06-09 18:51:43 -0400
-categories: pagina
+categories: matlab
+tag: 1
 ---
 ![MATLAB](/home/deisy/Documentos/tesis/matlab.jpg) 
 **Introducción al Software MATLAB**

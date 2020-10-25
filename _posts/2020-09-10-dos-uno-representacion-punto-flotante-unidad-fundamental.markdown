@@ -2,7 +2,8 @@
 layout: post
 title:  "Unidad Fundamental"
 date:   2020-09-10 18:51:43 -0400
-categories: pagina
+categories: rpf
+tag: 1
 ---
 
 *La unidad Fundamental*

@@ -2,7 +2,8 @@
 layout: post
 title:  "Polinomio Interpolante de Lagrange"
 date:   2020-09-10 18:51:43 -0400
-categories: pagina
+categories: interpolacion
+tag: 2
 ---
 
 *Polinomio Interpolante de Lagrange*

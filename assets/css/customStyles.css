@@ -1,31 +1,61 @@
 body, html{
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Commissioner', sans-serif;
+    background-color: #f4f4f8;
 }
 
 .main{
     display: inline-flex;
+    width: 100%;
 }
 
 .nav{
-    width: 280px;
+    width: 350px;
     height: 100%;
+
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     overflow-x: hidden;
-    background-color: #141921;
+
+    
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.01);
+    border-right: #f4f4f8 solid 1px;
+
+
 }
 
 .navHeader{
-    background-color: #263E6E;
-    text-align: center;
+    text-align: left;
     height: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px ;
+    border-bottom: #f4f4f8 solid 1px;
+}
+
+.navTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-decoration: none !important;
+
+}
+
+.navTitleText{
+    padding-left: 20px;
+    color: black;
+}
+
+.navFooter{
+    background-color: black;
+    padding: 10px;
 }
 
 .menuCollapse{
@@ -39,28 +69,58 @@ body, html{
 
 .navList{
     list-style: none;
-    display: block;
     padding-left: 0px;
-    margin-top: 0px;
+    margin-top: 25px;
+    display: block;
+}
+
+.navListItem{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.navIButtom{
+    width: 100%;
+    padding: 10px 10px 10px 50px;
+    background-color: rgb(92, 87, 87, 0);
+    border: none;
+    text-align: left;
+}
+
+.navIButtom:hover{
+    color: #674CF3;
 }
 
 .active{
-    background-color: #2e3542;
     font-weight: bold;
+    border-left: #674CF3 solid 5px;
+    color: #674CF3;
 }
 
-.navItem{
-    padding: 24px;
-    color: white;
+.category{
+    opacity: 50%;
+    font-size: .9rem;
+    padding: 30px 20px 5px 20px;
 }
 
-.noUnderline{
-    text-decoration: none !important;
+.categoryActive{
+    color: #1c1638;
+    opacity: 100%;
 }
 
 .content{
-    margin-left: 280px;
-    padding: 24px
+    margin-left: 350px;
+    width: 100%;
+}
+
+.contentTitle{
+    padding: 12px 60px;
+    background-color: white;
+    color: rgb(54, 51, 51);
+}
+
+.contentText{
+    padding: 20px 60px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -77,11 +137,25 @@ body, html{
     .navHeader{
         text-align: left;
         justify-content: space-between;
-        padding: 0px 10px;
+        padding: 10px 20px;
+    }
+
+    .contentTitle{
+        padding: 5px 60px;
     }
 
     .menuCollapse{
         display: flex;
+    }
+
+    .menuButton{
+        padding: 20px;
+        background-color:  #674CF3;
+        border-radius: 10px;
+        color: white;
+        border-style: none;
+        font-weight: bold;
+ 
     }
 
     .navList{

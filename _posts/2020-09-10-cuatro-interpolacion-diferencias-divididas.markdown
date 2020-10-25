@@ -2,7 +2,8 @@
 layout: post
 title:  "Interpolación y Diferencias Divididas"
 date:   2020-09-10 18:51:43 -0400
-categories: pagina
+categories: interpolacion
+tag: 3
 ---
 *DIFERENCIAS DIVIDIDAS*
 Supongamos que $P_n$ es un polinomio de lagrange de grado $n$ que coincide con la función $f$ con los números distintos $x_0,x_1,x_2,...,x_n$. Se pueden derivar que $p_n$ tiene la siguiente representación: 

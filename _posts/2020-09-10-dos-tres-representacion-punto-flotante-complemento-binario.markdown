@@ -2,7 +2,8 @@
 layout: post
 title:  "Complemento Binario"
 date:   2020-09-10 18:51:43 -0400
-categories: pagina
+categories: rpf
+tag: 3
 ---
 **Complemento Binario**
 Sea $A$ un número binario el complemento a unos de $A$ se obtiene restando $1$ a cada digito de $A$ y el complemento a dos de $A$ es su complemento a $1$ más $1$.

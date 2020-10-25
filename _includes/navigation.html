@@ -1,28 +1,130 @@
 <div class="nav">
     <div class="navHeader">
-        <a href="/">
-            <div>
+        <div>
+            <a href="/" class="navTitle">
                 <img src="{{ "/assets/images/logo.png" | relative_url }}" alt="Logo" class="navLogo">
-            </div>
-        </a>
+                <p class="navTitleText">Cálculo <br> numérico I</p>
+            </a>
+        </div>
         <div class="menuCollapse">
-            <button onclick="showMenu()" class="menu">
-                MENU
+            <button onclick="showMenu()" class="menuButton">
+                Contenido
             </button>
         </div>
     </div>
     <ul class="navList" id="myDIV">
-      {% assign posts = site.posts %}
-      {%- for post in posts -%}
-        <li class="{% if post.url == page.url %}active{% endif %}">
-            <a href="{{ post.url | relative_url }}" class="noUnderline">
-                <div class="navItem">
+
+        <!-- post del tipo matlab -->
+        <li class="category {% if page.categories contains 'matlab' %} categoryActive {% endif %}">
+            MatLab
+        </li>
+        {% assign postmatlab = site.categories.matlab | sort: "tag" "%}
+        {%- for post in postmatlab -%}
+        <li class="navListItem">
+            <a href="{{ post.url | relative_url }}">
+                <button class="navIButtom {% if post.url == page.url %}active{% endif %}">
                     {{ post.title | escape }}
-                </div>
+                </button>
             </a>
         </li>
-      {%- endfor -%}
+        {%- endfor -%}
+
+        <!-- post del tipo rpf -->
+        <li class="category {% if page.categories contains 'rpf' %} categoryActive {% endif %}">
+            Representación de punto flotante
+        </li>
+        {% assign postrpf = site.categories.rpf | sort: "tag" "%}
+        {%- for post in postrpf -%}
+        <li class="navListItem">
+            <a href="{{ post.url | relative_url }}">
+                <button class="navIButtom {% if post.url == page.url %}active{% endif %}">
+                    {{ post.title | escape }}
+                </button>
+            </a>
+        </li>
+        {%- endfor -%}
+
+        <!-- post del tipo senluv -->
+        <li class="category {% if page.categories contains 'senluv' %} categoryActive {% endif %}">
+            Solución de ecuaciones no lineales de una variable
+        </li>
+        {% assign postsenluv = site.categories.senluv | sort: "tag" "%}
+        {%- for post in postsenluv -%}
+        <li class="navListItem">
+            <a href="{{ post.url | relative_url }}">
+                <button class="navIButtom {% if post.url == page.url %}active{% endif %}">
+                    {{ post.title | escape }}
+                </button>
+            </a>
+        </li>
+        {%- endfor -%}
+
+        <!-- post del tipo interpolacion -->
+        <li class="category {% if page.categories contains 'interpolacion' %} categoryActive {% endif %}">
+            Interpolación
+        </li>
+        {% assign postinterpolacion = site.categories.interpolacion"%}
+        {%- for post in postinterpolacion -%}
+        <li class="navListItem">
+            <a href="{{ post.url | relative_url }}">
+                <button class="navIButtom {% if post.url == page.url %}active{% endif %}">
+                    {{ post.title | escape }}
+                </button>
+            </a>
+        </li>
+        {%- endfor -%}
+
+        <!-- post del tipo in -->
+        <li class="category {% if page.categories contains 'in' %} categoryActive {% endif %}">
+            Integración Númerica
+        </li>
+        {% assign postin = site.categories.in %}
+        {%- for post in postin -%}
+        <li class="navListItem">
+            <a href="{{ post.url | relative_url }}">
+                <button class="navIButtom {% if post.url == page.url %}active{% endif %}">
+                    {{ post.title | escape }}
+                </button>
+            </a>
+        </li>
+        {%- endfor -%}
+
+        <!-- post del tipo edo -->
+        <li class="category {% if page.categories contains 'edo' %} categoryActive {% endif %}">
+            Ecuaciones diferenciales ordinarias
+        </li>
+        {% assign postedo = site.categories.edo"%}
+        {%- for post in postedo -%}
+        <li class="navListItem">
+            <a href="{{ post.url | relative_url }}">
+                <button class="navIButtom {% if post.url == page.url %}active{% endif %}">
+                    {{ post.title | escape }}
+                </button>
+            </a>
+        </li>
+        {%- endfor -%}
+
+        <!-- post del tipo bibliografia -->
+        <li class="category {% if page.categories contains 'bibliografia' %} categoryActive {% endif %}y">
+            Bibliografías
+        </li>
+        {% assign postbibliografia = site.categories.bibliografia"%}
+        {%- for post in postbibliografia -%}
+        <li class="navListItem">
+            <a href="{{ post.url | relative_url }}">
+                <button class="navIButtom {% if post.url == page.url %}active{% endif %}">
+                    {{ post.title | escape }}
+                </button>
+            </a>
+        </li>
+        {%- endfor -%}
+
+        <!-- footerB -->
+        <li class="navFooter">
+            footer
+        </li>
     </ul>
+    
 </div>
 
     
