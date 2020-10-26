@@ -13,15 +13,25 @@ $4  2  3 = 1 1 0 1 0 0 1 1 1$
 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 | 0 | 1 | 0 | 0 | 1 | 1 | 1 |
 
  El computador almacena $-423$ en una localización de memoria, tomando el complemento a $1$ de la anterior representación $423$ y sumándole un $1$ el computador puede saber si un entero **J** en la memoria es positivo o negativo minando el primer digito. 
-Si $J=0\rightarrow+$
 
+<!-- asi haces una linea divisora, por si necesitas. son tres guiones pegados-->
+---
+
+## asi esta originalmente -->
+Si $J=1\rightarrow-$
+
+---
+
+## asi si la formula va al lado del texto -->
 Si 
 {% katex display %}
 J=1\rightarrow
 {% endkatex %}
 
-Si $J=1\rightarrow-$
+---
 
-{% katexmm %}
-This is a mixed environment where you can have normal text and $c = \pm\sqrt{a^2 + b^2}$ fenced math. \$!
-{% endkatexmm %}
+## asi si quieres que la formula ocupe toda la linea -->
+Si 
+{% katex %}
+J=1\rightarrow
+{% endkatex %}
