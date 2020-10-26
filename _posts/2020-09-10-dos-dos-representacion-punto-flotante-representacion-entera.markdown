@@ -16,8 +16,12 @@ $4  2  3 = 1 1 0 1 0 0 1 1 1$
 Si $J=0\rightarrow+$
 
 Si 
-{% katex %}
+{% katex display %}
 J=1\rightarrow
 {% endkatex %}
 
 Si $J=1\rightarrow-$
+
+{% katexmm %}
+This is a mixed environment where you can have normal text and $c = \pm\sqrt{a^2 + b^2}$ fenced math. \$!
+{% endkatexmm %}
