@@ -6,23 +6,27 @@ categories: rpf
 tag: 3
 ---
 **Complemento Binario**
-Sea $A$ un número binario el complemento a unos de $A$ se obtiene restando $1$ a cada digito de $A$ y el complemento a dos de $A$ es su complemento a $1$ más $1$.
-$A= 1 1 1 1 0 0 0 0 1 1 1 1_2$
-$A_1= 0  0  0  0  1  1  1  1 0  0  0  0_2 + 1$
-$A_2= 0  0  0  0  1  1  1  1 0  0  0 1$
+
+Sea {% katex %} A {% endkatex %} un número binario el complemento a unos de {% katex %} A {% endkatex %} se obtiene restando {% katex %} 1 {% endkatex %} a cada digito de {% katex %} A {% endkatex %} y el complemento a dos de {% katex %} A {% endkatex %} es su complemento a {% katex %} 1 {% endkatex %} más {% katex %} 1 {% endkatex %}.
+
+{% katex display %}A= 1 1 1 1 0 0 0 0 1 1 1 1_2 {% endkatex %}
+
+{% katex display %}A_1= 0  0  0  0  1  1  1  1 0  0  0  0_2 + 1{% endkatex %}
+{% katex display %}A_2= 0  0  0  0  1  1  1  1 0  0  0 1{% endkatex %}
 
 
 
 Sea 
-$A=-414.8125$
+{% katex display %}A=-414.8125{% endkatex %}
+
+
 *Binario* 
-$A= -110100011.110 1_2$
+{% katex display %}A= -110100011.110 1_2{% endkatex %}
 
-$A= -0.1101000111101*2^9$ normalización de un número
+{% katex display %}A= -0.1101000111101*2^9{% endkatex %} normalización de un número
 
-$64+9=73=1001001_2$ exponente
-1 | 1 |0 | 0 | 1 | 0 | 0 | 1 | 0 |	 0 |…|	0 | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 1 | 1 | 1 | 1 | 0 |	1 |
+{% katex display %}64+9=73=1001001_2{% endkatex %} exponente
 
-. . . dentro de ese rango se colocan los ceros hasta que se completan los *64 bits*
+{% katex display %}1 | 1 |0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |…|0 | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 1 | 1 | 1 | 1 | 0 |1 |. . .{% endkatex %} dentro de ese rango se colocan los ceros hasta que se completan los *64 bits*
 
 

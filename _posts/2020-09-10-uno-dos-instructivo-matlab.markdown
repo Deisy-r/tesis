@@ -6,7 +6,8 @@ categories: matlab
 tag: 2
 ---
 
-![instructivo](/home/deisy/Documentos/tesis/assets/images/manual matlab.png)
+![instructivo](assets/images/manual.png)
+
 
 ## Ahora a empezar
 
@@ -141,10 +142,11 @@ Definición:
 Para crear un vector se introducen los valores deseados separados por espacios (o comas) todo ello entre corchetes [ ]. Normalmente se usan las letras mayúsculas.
 
 Ejemplo:
-```
+> 
      >A = [123; 456; 789]
      A = 123456789 
-```
+
+
 
 **Funciones:**
 |Función| Definición |
@@ -156,10 +158,10 @@ Si lo que queremos es crear una matriz lo hacemos de forma similar, pero separan
 
 Ejemplo:  
 
-```
+> 
 >  b = [1 2 3 4 5 6 7 8 9] 
 B = 1 2 3 4 5 6 7 8 9
-```
+
 
 **Operaciones básicas:**
 
@@ -217,12 +219,10 @@ Si queremos que escriba algo en pantalla podemos utilizar el comando **disp**.
 
 Matlab permite trabajar con matrices de más de dos dimensiones. Los elementos de una hipermatriz pueden ser números, caracteres, estructuras y vectores o matrices de celdas. Las funciones que operan con matrices de más de dos dimensiones son análogas a las funciones vistas anteriormente, aunque con algunas diferencias, por ejemplo, a la hora de definirlas:
 
-```
->> HM(:,:,1) = [1 2 3; 4 5 6]; % definimos la primera capa
->> HM(:,:,2) = [7 8 9; 10 11 12] % definimos la segunda capa
+> HM(:,:,1) = [1 2 3; 4 5 6]; % definimos la primera capa
+ HM(:,:,2) = [7 8 9; 10 11 12] % definimos la segunda capa
 HM(:,:,1) = 123456
 HM(:,:,2) = 789101112
-```
 
 Algunas funciones para generar matrices admiten más de dos subíndices y pueden ser utilizadas para generar hipermatrices como **rand**, **randn**, **zeros** y **ones**, también se pueden emplear con hipermatrices las funciones **size** y **reshape** entre otras.
 
@@ -240,7 +240,7 @@ Es una agrupación de datos de tipo diferente bajo un mismo nombre. A los datos 
 
 Ejemplo:
 
-```
+
 >> alumno.nombre = 'Pablo'; % introduce el campo nombre en la estructura alumno 
 >> alumno.apellido1 = 'Fernández'; % introduce el campo apellido1 en la estructura alumno 
 >> alumno.apellido2 = 'García'; % introducimos el campo apellido2 en la estructura alumno 
@@ -251,7 +251,8 @@ nombre: 'Pablo'
 apellido1: 'Fernández'
 apellido2: 'García'
 edad: 15
-```
+
+
 **VECTORES Y MATRICES DE CELDAS**
 
 Un vector de celdas es un vector cuyos elementos son cada uno de ellos una variable de cualquier tipo. En todo vector sus elementos pueden ser números o cadenas de caracteres, pero en un vector de celdas el primer elemento puede ser un número, el segundo una matriz, el tercero una estructura, etc.
@@ -310,8 +311,8 @@ Si quieres cambiar la apariencia de la gráfica basta pinchar en el último bot�
 
 Además, podemos colocar etiquetas o manipular la gráfica:
 
-```
-etiqueta sobre el eje X de la gráfica actual: >> xlabel('texto')
+
+> etiqueta sobre el eje X de la gráfica actual: >> xlabel('texto')
 etiqueta sobre el eje Y de la gráfica actual: >> ylabel('texto')
 título en la cabecera de la gráfica actual: >> title('texto')
 texto en el lugar especificado por las coordenadas: >> text(x,y, 'texto') texto,
@@ -323,7 +324,7 @@ fija que la gráfica sea un cuadrado: >> axis square
 desactiva axis equal y axis square: >> axis normal
 abre una ventana de gráfico: >> hold on
 borra lo que hay en la ventana de gráfico: >> hold off
-```
+
 
 Todas estas órdenes se las podemos dar desde la propia ventana de la gráfica una vez que hemos abierto las opciones con el botón indicado anteriormente.
 
@@ -364,7 +365,7 @@ La función **pcolor** transforma la altura a un conjunto de colores.
 
 **Manipulación de gráficos:**
 
-```
+
 fija el ángulo de visión especificando el azimut y la elevación: >> view(az,el)
 
 coloca su vista en un vector de coordenada cartesiana (x,y,z) en el espacio 3-D: >> view([x,y,z])
@@ -374,12 +375,12 @@ almacena en az y el los valores del azimut y de la elevación de la vista actual
 añade etiquetas de altura a los gráficos de contorno: >> clabel(C,h)
 
 añade una barra de color vertical mostrando las transformaciones: >> colorbar
-```
+
 
 **Comprensión de los mapas de color:** 
 
-```
-(color, nombre corto, rojo/verde/azul)
+
+> (color, nombre corto, rojo/verde/azul)
 >>Negro, K, [0 0 0]
 Blanco, w, [1 1 1]
 Rojo, r, [1 0 0]
@@ -387,7 +388,7 @@ Verde, g, [0 1 0]
 Azul, b, [0 0 1]
 Amarillo, y, [1 1 0]
 Magenta, m, [1 0 1]
-```
+
 
 **PROGRAMACIÓN DE MATLAB**
 
@@ -396,40 +397,39 @@ Magenta, m, [1 0 1]
 Un bloque for en cada iteración asigna a la variable la columna i-ésima de la expresión y ejecuta las órdenes. En la práctica las expresiones suelen ser del tipo escalar: escalar en cuyo caso las 
 columnas son escalares.
 
-```
+
 >>for variable = expresión
-\<orden>
-\<orden>
+<orden>
 …
-\<orden>
+<orden>
 end
-```
+
 
 **Sentencia WHILE**
 
 Un bloque while ejecuta las órdenes mientras todos los elementos de la expresión sean verdaderos.
 
-```
+
 > > ** Mientras ** <Expresión> \ < Orden > \ < Orden > \ ... \ < Orden > ** Fin **
-```
+
 
 **Sentencia IF**
 
 Un bloque **if** puede escribirse de varias maneras distintas. Lo que hace es evaluar una expresión lógica y si es cierta ejecuta las órdenes que encuentre antes del **end**.
 
-```
+
 >>**if **<expresión>
 <órdenes evaluadas si la expresión es verdadera >
-```
+
 
 **end**
 
 Puede que nos interese que en caso de no ejecutar dicha orden ejecute otra distinta. Esto se lo indicaremos usando **else** dentro del bloque.
 
-```
+
 >>**if** <expresión>
 <órdenes evaluadas si la expresión es verdadera >
-```
+
 
 **else**
 
@@ -439,7 +439,7 @@ Puede que nos interese que en caso de no ejecutar dicha orden ejecute otra disti
 
 Si queremos dar una estructura mucho más completa, usaremos la más general donde sólo se evalúan las órdenes asociadas con la primera expresión verdadera de todas. En cuanto la evalúe deja de leer el resto y se dirige directamente al **end**.
 
-```
+
 >>**if** <expresión1>
 <órdenes evaluadas si la expresión1 es verdadera >
 **elseif** <expresión2>
@@ -452,7 +452,7 @@ Si queremos dar una estructura mucho más completa, usaremos la más general don
 **else**
 <órdenes evaluadas si ninguna otra expresión es verdadera >
 **end**
-```
+
 
 **Sentencia BREAK**
 
@@ -471,9 +471,9 @@ Un fichero de comandos contiene simplemente un conjunto de comandos que se ejecu
 
 Las funciones permiten definir funciones análogas a las de Matlab, con su nombre, argumentos y valores de salida. La primera línea que no sea comentario debe empezar por la palabra **function**, seguida por los valores de salida (entre corchetes [ ] y separados por comas si hay más de uno), el signo igual (=) y el nombre de la función seguido de los argumentos (entre paréntesis ( ) y separados por comas):
 
-```
+
 >>Function [a,b,c]= nombre_función (x,y,z)
-```
+
 
 En las líneas siguientes escribimos los argumentos de salida a partir de los de entrada. El nombre de la función y el nombre del archivo deben ser idénticos y no empezar por cifra sino por letra.
 
@@ -502,7 +502,7 @@ median(x) |Mediana de los valores de vectores y columnas
 prod(x)|Producto de elementos en columnas 
 rand(n) |Números aleatorios distribuidos uniformemente
 randn(n)|Números aleatorios distribuidos normalmente
- range(x) |Rango de cada columna
+range(x) |Rango de cada columna
 sort(x) |Ordena columnas en orden ascendente std(x) Desviación estándar de la muestra
 sum(x) |Suma de elementos en cada columna 
 tabulate(v) |Tabla de frecuencias del vector
@@ -521,7 +521,7 @@ Matlab trabaja con los polinomios como vectores fila y con las raíces como vect
 
 Ejemplo:
 
-```
+
 >>p=[1  -9  13  9  -14]; %representa al polinomio 𝑥4−9𝑥3+13𝑥2−9𝑥−14
 >>roots (p) %calcula sus raíces
 ans=
@@ -532,7 +532,7 @@ ans=
 >> poly (ans) %devuelve el polinomio generado por esas cuatro raíces
 ans=
 1.0000   -9.0000   13.0000   9.0000   -14.0000
-```
+
 
 **Otras características**
 
@@ -577,10 +577,10 @@ Si tenemos un fichero ***.m**, lo primero que debemos hacer es asegurarnos de qu
 **function** nombre (el nombre de la función debe coincidir con el nombre del fichero)
 Ahora debemos situarnos en el directorio donde tengamos el fichero que queremos transformar usando el comando **cd**, por ejemplo:
 
-```
+
 >> cd 'C:\Documents and Settings\Escritorio\Prueba'
 Lo que debemos escribir a continuación es el comando mcc seguido de –m y el nombre del fichero:
 >> mcc -m nombre
-```
+
 
 Con esto nos aparecerá en el mismo directorio donde estamos un ejecutable con el mismo nombre. También aparecerán una carpeta y varios archivos.

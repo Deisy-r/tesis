@@ -7,31 +7,21 @@ tag: 2
 ---
 **REPRESENTACION ENTERA**
 Los enteros o números en punto fijo son números que no tienen punto decimal. Un entero **J** se representa en la memoria de un computador por medio de su forma binaria si son positivos y por medio de su complemento a **2** de su valor absoluto. 
-*Ejemplo:*
-$4  2  3 = 1 1 0 1 0 0 1 1 1$
 
+
+*Ejemplo:*
+{% katex display %}
+4  2  3 = 1 1 0 1 0 0 1 1 1
+{% endkatex %}
+
+{% katex diplay %}
 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 | 0 | 1 | 0 | 0 | 1 | 1 | 1 |
+{% endkatex %}
 
  El computador almacena $-423$ en una localización de memoria, tomando el complemento a $1$ de la anterior representación $423$ y sumándole un $1$ el computador puede saber si un entero **J** en la memoria es positivo o negativo minando el primer digito. 
 
-<!-- asi haces una linea divisora, por si necesitas. son tres guiones pegados-->
----
 
-## asi esta originalmente -->
-Si $J=1\rightarrow-$
+Si {% katex %}J=0\rightarrow + {% endkatex %}
 
----
 
-## asi si la formula va al lado del texto -->
-Si 
-{% katex display %}
-J=1\rightarrow
-{% endkatex %}
-
----
-
-## asi si quieres que la formula ocupe toda la linea -->
-Si 
-{% katex %}
-J=1\rightarrow
-{% endkatex %}
+Si {% katex %}J=1\rightarrow - {% endkatex %}
