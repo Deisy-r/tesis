@@ -8,6 +8,8 @@ tag: 2
 
 ##Polinomio Interpolante de Lagrange*
 
+![lagrange](/assets/images/lagrange.png)
+
 En análisis numérico el polinomio de Lagrange, interpola un conjunto de puntos dados en forma de Lagrange.
 
 La reformulación del polinomio de Newton que evita el calculo por diferencias divididas es la siguiente: 

@@ -27,6 +27,6 @@ Sea
 
 {% katex display %}64+9=73=1001001_2{% endkatex %} exponente
 
-{% katex display %}1 | 1 |0 | 0 | 1 | 0 | 0 | 1 | 0 | 0 |…|0 | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 1 | 1 | 1 | 1 | 0 |1 |. . .{% endkatex %} dentro de ese rango se colocan los ceros hasta que se completan los *64 bits*
+![binario](/assets/images/binario.png) dentro de ese rango se colocan los ceros hasta que se completan los *64 bits*
 
 

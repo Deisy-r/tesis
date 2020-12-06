@@ -8,6 +8,8 @@ tag: 1
 
 *Método de Bisección*
 
+![biseccion](/assets/images/biseccion.png)
+
 Se considera un intervalo cerrado {% katex %}[a,b]{% endkatex %}, donde la función {% katex %}f(x){% endkatex %} cambia de signo, es decir, la imagen {% katex %}f(a).f(b)<0{% endkatex %}. El método consiste en ir dividiendo el intervalo *{% katex %}[a,b]{% endkatex %} por la mitad de la siguiente forma: 
 
 - Se toma el punto medio:

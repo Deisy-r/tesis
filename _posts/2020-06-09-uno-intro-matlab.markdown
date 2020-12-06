@@ -8,6 +8,8 @@ tag: 1
 
 **Introducción al Software MATLAB**
 
+![matlab](/assets/images/matlab.png)
+
 Matlab (abreviatura de **MAT**rix **LAB**oratory, laboratorio de matrices), es una gran herramienta usada en muchos campos, siendo un sistema de cálculo numérico que permite realizar rápidamente y con exactitud los mismos. Cabe destacar que en esta herramienta podemos manipular matrices, representar datos y funciones, implementar algoritmos y crear interfaces de usuario.
 
 El paquete MATLAB cuenta con dos herramientas adicionales: Simulink (plataforma de simulación multidominio) y GUIDE (editor de interfaces de usuario- GUI).

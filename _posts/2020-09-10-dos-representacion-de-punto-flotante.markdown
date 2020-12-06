@@ -6,5 +6,6 @@ categories: rpf
 tag: 0
 ---
 **Representación de punto flotante**
+![Representacion de Punto Flotante](/assets/images/rpf.png)
 
 INTRODUCCION

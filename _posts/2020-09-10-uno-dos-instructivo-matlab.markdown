@@ -6,7 +6,7 @@ categories: matlab
 tag: 2
 ---
 
-![instructivo](assets/images/manual.png)
+![instructivo](/assets/images/manual.png)
 
 
 ## Ahora a empezar

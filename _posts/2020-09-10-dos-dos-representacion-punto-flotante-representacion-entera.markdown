@@ -14,9 +14,7 @@ Los enteros o números en punto fijo son números que no tienen punto decimal. U
 4  2  3 = 1 1 0 1 0 0 1 1 1
 {% endkatex %}
 
-{% katex diplay %}
-0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 | 0 | 1 | 0 | 0 | 1 | 1 | 1 |
-{% endkatex %}
+![entera](/assets/images/entera.png)
 
  El computador almacena $-423$ en una localización de memoria, tomando el complemento a $1$ de la anterior representación $423$ y sumándole un $1$ el computador puede saber si un entero **J** en la memoria es positivo o negativo minando el primer digito. 
 
