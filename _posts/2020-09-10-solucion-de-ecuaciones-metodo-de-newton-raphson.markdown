@@ -32,9 +32,8 @@ Representamos las curvas
 Está claro que hay una solución. Tomamos como valor inicial {% katex %}x_0=0.5{% endkatex %}.
 Escribimos la ecuación en la forma {% katex %}f(x)=0{% endkatex %}, con 
 
-{% katex display %}
-f(x)=e^x-/frac{1}{x}
-{% endkatex %}
+{% katex %}f(x)=e^x-/frac{1}{x}{% endkatex %}
+
 
 Derivada {% katex %}f'(x)=e^x+/frac{1}{x^2}{% endkatex %}
 
@@ -47,11 +46,7 @@ Método.
 
 
 El resultado es: 
-{% katex display %}
-/alpha=0.567143
-{% endkatex %}
+{% katex %}/alpha=0.567143{% endkatex %}
 
 El valor de la raíz con 10 decimales es:
-{% katex display %}
-/alpha=0.5671432904
-{% endkatex %}
+{% katex %}/alpha=0.5671432904{% endkatex %}

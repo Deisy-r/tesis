@@ -1,12 +1,11 @@
 ---
 layout: post
-title:  "Interpolación y Diferencias Divididas"
+title:  "Diferencias Divididas"
 date:   2020-09-10 18:51:43 -0400
 categories: interpolacion
 tag: 3
 ---
 
-##DIFERENCIAS DIVIDIDAS
 
 Supongamos que {% katex %}P_n{% endkatex %} es un polinomio de lagrange de grado {% katex %}n{% endkatex %} que coincide con la función {% katex %}f{% endkatex %} con los números distintos {% katex %}x_0,x_1,x_2,...,x_n{% endkatex %}. Se pueden derivar que {% katex %}p_n{% endkatex %} tiene la siguiente representación: 
 

@@ -16,7 +16,7 @@ La mantisa denota: {% katex %}\frac{d_1}{b_1}...+\frac{d_p}{b_p}{% endkatex %} ,
 
 El entero {% katex %}P{% endkatex %} denota la cantidad de dígitos de precisión y {% katex %}e{% endkatex %} el entero tal que esta: {% katex %}L\neq e \neq U{% endkatex %}  siendo {% katex %}L{% endkatex %} el exponente más pequeño que pueda tomar y {% katex %}U{% endkatex %} el más grande.
 
-{% katex %}Signo = 1 bit | Exponencial = 7 bits | Mantisa = 24 bits {% endkatex %}
+![3](/assets/images/3.png)
 
 
 Los números en punto flotante llamados también números reales, tienen decimales intercalados.
@@ -31,7 +31,7 @@ Representa el número -0,00523 en una palabra de 16 bits siendo b=10.
 {% katex %}-0,00523 = (-1)(0,523)_10 10^2{% endkatex %}
 
 
-{% katex display %}|1 | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 5 | 2 | 3 |{% endkatex %}
+![4](/assets/images/4.png)
 
 
  Se pone *“1”* porque el {% katex %}\delta{% endkatex %} es negativo.

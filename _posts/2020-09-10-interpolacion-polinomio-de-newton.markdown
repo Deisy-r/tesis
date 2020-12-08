@@ -6,10 +6,12 @@ categories: interpolacion
 tag: 1
 ---
 
-##Polinomio Interpolante de Newton
 
 Este método es algorítmico y resulta sumamente como en determinados casos, sobre todo cuando se requiere calcular un polinomio interpolador de grado elevado.
-Para un polinomio de *n-esimo* orden se requiere de {% katex %}(x_0,f(x_0)), (x_1,f(x_1)), ..., (x_n,f(x_n)){% endkatex %}. Con la Siguiente formula: 
+Para un polinomio de *n-esimo* orden se requiere de 
+{% katex %}(x_0,f(x_0)), (x_1,f(x_1)), ..., (x_n,f(x_n)){% endkatex %}. 
+
+Con la Siguiente formula: 
 
 {% katex display %}P_n(x)=b_0+b_1(x-x_0)+b_2(x-x_0)(x-x_1)+b_n(x-x_0)(x-x_1)...(x-x_{n-1}){% endkatex %}
 {% katex display %}P_n(x)=b_0+\sum^n_{i=1}b_i(\pi^{i=1}_{j-1}(x-x_j)){% endkatex %}
@@ -42,11 +44,17 @@ ___
 
 Para entender el algoritmo del polinomio interpolante de newton mediante las diferencias divididas, hagamos la construcción por niveles o columnas.
 
-Nivel {% katex display %}b_1=\frac{2-9}{5-(-3)}=\frac{-7}{8}{% endkatex %}, 
+Nivel {% katex %}b_1{% endkatex %}
+
+{% katex display %}b_1=\frac{2-9}{5-(-3)}=\frac{-7}{8}{% endkatex %}, 
 {% katex display %}\frac{(-1)-2}{7-5}=\frac{-3}{2}{% endkatex %}, 
 {% katex display %}\frac{0-(-1)}{8-7}=\frac{1}{1}=1{% endkatex %}
 
-Nivel {% katex display %}b_2=\frac{\frac{-3}{2}-\frac{-7}{8}}{7-(-3)}=\frac{\frac{-5}{8}}{10}=\frac{-1}{16}{% endkatex %}, 
+Nivel {% katex %}b_2{% endkatex %}
+
+{% katex display %}b_2=\frac{\frac{-3}{2}-\frac{-7}{8}}{7-(-3)}=\frac{\frac{-5}{8}}{10}=\frac{-1}{16}{% endkatex %}, 
 {% katex display %}\frac{1-\frac{-3}{2}}{8-5}=\frac{\frac{5}{2}}{3}=\frac{5}{6}{% endkatex %}
 
-Nivel {% katex display %}b_3=\frac{\frac{-1}{16}-\frac{5}{6}}{8-(-3)}=\frac{\frac{-43}{48}}{11}=\frac{-43}{528}{% endkatex %}
+Nivel {% katex %}b_3{% endkatex %} 
+
+{% katex display %}b_3=\frac{\frac{-1}{16}-\frac{5}{6}}{8-(-3)}=\frac{\frac{-43}{48}}{11}=\frac{-43}{528}{% endkatex %}

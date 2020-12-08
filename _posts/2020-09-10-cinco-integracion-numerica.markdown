@@ -5,7 +5,7 @@ date:   2020-09-10 18:51:43 -0400
 categories: in
 tag: 0
 ---
-## INTEGRACIÓN NUMÉRICA
+
 
 **Fórmula de Newton-Cotes**
 Nombradas así por *Isaac Newton* y *Roger Cotes*, en las cuales se evalúa la función en puntos equidistantes, para así hallar un valor aproximado de la integral. Cuanto más intervalos se divida la función más preciso será el resultado.

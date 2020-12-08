@@ -30,17 +30,18 @@ Sea {% katex %}f \epsilon C[a,b]{% endkatex %} supongamos que {% katex %}f(a).f(
 *Ejemplo:* 
 Determine aproximadamente cuantas iteraciones son necesarias para resolver {% katex %}f(x)=x^3+4x^2-10{% endkatex %} con una precisión {% katex %}\varepsilon=10^{-5}{% endkatex %}  con {% katex %}[1,2]{% endkatex %}
 
-| *n* | *a_n* | *b_n* | *p_n* | *f(p_n)* |
-|--|--|--|--|--|
-| 1 | 1.0 | 2.0 |1.5  | 2.375 |
-| 2 | 1.0 |1.5  | 1.25 | -1.79685 |
-|  3| 1.25 | 1.5 |1.375  | 0.16211 |
-|  4|  1.25| 1.375 |1.3125  | -0.8484 |
+![5](/assets/images/5.png)
+
 .
+
 .
+
 .
+
 _____________________________
+
 **Iteración de Punto Fijo**
+
 
 Consideremos una función {% katex %}g{% endkatex %} de la forma {% katex %}g(x)=x{% endkatex %} a una solución de esta ecuación se llama un punto fijo de la función {% katex %}g{% endkatex %}. 
 

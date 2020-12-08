@@ -15,13 +15,7 @@ tag: 2
 
 De acuerdo a su orden de precedencia: 
 
-| Operación | Símbolo | Expresión en MATLAB 
-|--|--|--|
-|<center>Potencia |<center>^| <center>a^b |
-| <center>Multiplicación | <center>* | <center>a*b | 
-| <center>División | <center>/ |<center> a/b |
-| <center>Suma | <center>+ |<center> a+b |
-| <center>Resta | <center>- |<center> a-b |
+![1](/assets/images/1.png)
 
 Matlab no tiene en cuenta los espacios. Para que Matlab evalúe la línea pero que no escriba la respuesta, basta escribir punto y coma (;) al final de la sentencia. Si la sentencia es demasiado larga para que quepa en una sola línea podemos poner tres puntos (…) seguido de la tecla “Intro” para indicar que continúa en la línea siguiente.
 
@@ -149,6 +143,7 @@ Ejemplo:
 
 
 **Funciones:**
+
 |Función| Definición |
 |--|--|
 |cross (x,y) |Producto vectorial entre los vectores x e y
@@ -165,20 +160,7 @@ B = 1 2 3 4 5 6 7 8 9
 
 **Operaciones básicas:**
 
-| Símbolo | Expresión | Operación |  
-|--|--|--|
-| + | A + B|Suma de matrices
-|-| A - B | Resta de matrices
-|* | A * B | Multiplicación de matrices
-|.*|A .* B |Multiplicación elemento a elemento de matrices 
-|/| A / B| División de matrices por la derecha
-|./| A ./ B |División elemento a elemento de matrices por der
-| \ |A \ B | División de matrices por la izquierda
-|.\ |A .\ B |División elemento a elemento de matrices por la izq
-|^ | A ^ B| Potenciación (n debe ser un número, no una matriz)
-|.^ |A .^ B|Potenciación elemento a elemento de matrices 
-|'| A ' B| Trasposición compleja conjugada
-|. '|A . ' B|Trasposición de matrices
+![2](/assets/images/2.png)
 
 **Funciones para el análisis de matrices:**
 
@@ -301,9 +283,9 @@ Existe un orden de precedencia para operadores aritméticos, lógicos y relacion
 5. | Y
 
 
-##GRAFICAS 
+## GRAFICAS 
 
-** 2-D **
+**2-D**
 
 La orden **plot** genera una gráfica. Los argumentos deben ser vectores de la misma longitud. La función **plot** nos permite otras opciones como superponer gráficas sobre los mismos ejes.
 
@@ -313,16 +295,27 @@ Además, podemos colocar etiquetas o manipular la gráfica:
 
 
 > etiqueta sobre el eje X de la gráfica actual: >> xlabel('texto')
+
 etiqueta sobre el eje Y de la gráfica actual: >> ylabel('texto')
+
 título en la cabecera de la gráfica actual: >> title('texto')
+
 texto en el lugar especificado por las coordenadas: >> text(x,y, 'texto') texto,
+
 el lugar lo indicamos después con el ratón: >> gtext('texto')
+
 dibujar una rejilla: >> grid
+
 fija valores máximo y mínimo de los ejes: >> axis( [xmin xmax ymin ymax] )
+
 fija que la escala en los ejes sea igual: >> axis equal
+
 fija que la gráfica sea un cuadrado: >> axis square
+
 desactiva axis equal y axis square: >> axis normal
+
 abre una ventana de gráfico: >> hold on
+
 borra lo que hay en la ventana de gráfico: >> hold off
 
 
@@ -343,7 +336,7 @@ loglog |Como plot pero con escala logarítmica en ambos ejes
 semilogx |Como plot pero escala logarítmica en el eje x 
 semilogy |Como plot pero escala logarítmica en el eje y
 
-** 3-D **
+**3-D**
 
 Gráficos de línea:
 

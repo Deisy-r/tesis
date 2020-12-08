@@ -6,7 +6,6 @@ categories: interpolacion
 tag: 2
 ---
 
-##Polinomio Interpolante de Lagrange*
 
 ![lagrange](/assets/images/lagrange.png)
 
@@ -21,6 +20,6 @@ Si {% katex %}x_0,x_1,...,x_n{% endkatex %} son distintos en el intervalo {% kat
 
 Donde {% katex %}P{% endkatex %} es el polinomio interpolante dado el siguiente: 
 
-${% katex display %}p(x)=f(x_0)L_{n,0}(x)+...+f(x_n)L_{n,n}(x)={% endkatex %}
+{% katex display %}p(x)=f(x_0)L_{n,0}(x)+...+f(x_n)L_{n,n}(x)={% endkatex %}
 
-${% katex display %}\sum^n_{k=0}f(x_k)L_{n,k(x)}{% endkatex %}
+{% katex display %}\sum^n_{k=0}f(x_k)L_{n,k(x)}{% endkatex %}
