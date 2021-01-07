@@ -16,7 +16,7 @@ Los enteros o números en punto fijo son números que no tienen punto decimal. U
 
 ![entera](/assets/images/entera.png)
 
- El computador almacena $-423$ en una localización de memoria, tomando el complemento a $1$ de la anterior representación $423$ y sumándole un $1$ el computador puede saber si un entero **J** en la memoria es positivo o negativo minando el primer digito. 
+ El computador almacena {% katex %}-423{% endkatex %} en una localización de memoria, tomando el complemento a {% katex %}1{% endkatex %} de la anterior representación {% katex %}423{% endkatex %} y sumándole un {% katex %}1{% endkatex %} el computador puede saber si un entero **J** en la memoria es positivo o negativo minando el primer digito. 
 
 
 Si {% katex %}J=0\rightarrow + {% endkatex %}

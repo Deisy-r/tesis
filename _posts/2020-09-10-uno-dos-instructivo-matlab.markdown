@@ -387,16 +387,17 @@ Magenta, m, [1 0 1]
 
 **Sentencia FOR**
 
-Un bloque for en cada iteración asigna a la variable la columna i-ésima de la expresión y ejecuta las órdenes. En la práctica las expresiones suelen ser del tipo escalar: escalar en cuyo caso las 
+Un bloque **for** en cada iteración asigna a la variable la columna i-ésima de la expresión y ejecuta las órdenes. En la práctica las expresiones suelen ser del tipo escalar: escalar en cuyo caso las 
 columnas son escalares.
 
-
+{% katex display %}
 >>for variable = expresión
 <orden>
 …
 <orden>
 end
 
+{% endkatex %}
 
 **Sentencia WHILE**
 
