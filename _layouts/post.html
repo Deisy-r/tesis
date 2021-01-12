@@ -20,9 +20,18 @@ layout: default
           Bibliografía
         {% endif %}
       </small>
-      <h1 itemprop="name headline">
-        {{ page.title | escape }}
-      </h1>
+      <div class="pageHeader">
+        <div class="titleHeader">
+          <h1 itemprop="name headline">
+            {{ page.title | escape }}
+          </h1>
+        </div>
+        <div class="titleDownload">
+          <a href="{{ site.url }}/assets/pdf/{{ page.categories }}.pdf" clas="link" target="blank">
+            Descargar esta unidad como PDF
+          </a>
+        </div>
+      </div>
     </div>
 
     <div class="post-content e-content" itemprop="articleBody">

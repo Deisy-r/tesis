@@ -2,8 +2,8 @@
 layout: post
 title:  "Ecuaciones Diferenciales Ordinarias (EDO)"
 date:   2020-11-20 18:51:43 -0400
-categories: senluv
-tag: 4
+categories: edo
+tag: 1
 ---
 
 	Sea {% katex %}𝑦=𝑓(𝑥){% endkatex %}, tal que {% katex %}𝑓: \mathbb R → \mathbb R,𝑦(𝑛){% endkatex %} la _n-ésima_ derivada de _𝑦_, entonces una ecuacion diferencial ordinaria de _orden 𝑛_ tiene la siguiente forma:

@@ -11,21 +11,17 @@ body, html{
 }
 
 .nav{
-    width: 350px;
+    width: 420px;
     height: 100%;
-
-    position: fixed;
+    /* position: fixed; */
     z-index: 1;
     top: 0;
     left: 0;
     overflow-x: hidden;
-
-    
-    background-color: white;
+    background-color: #52527e;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.01);
     border-right: #f4f4f8 solid 1px;
-
-
+    float:left;
 }
 
 .navHeader{
@@ -35,26 +31,27 @@ body, html{
     justify-content: center;
     align-items: center;
     padding: 10px ;
-    border-bottom: #f4f4f8 solid 1px;
+    border-bottom: #675eb8 solid 1px;
 }
 
 .navTitle{
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
     font-weight: bolder;
     text-decoration: none !important;
-
 }
 
 .navTitleText{
     padding-left: 20px;
-    color: black;
+    color: white;
 }
 
 .navFooter{
-    background-color: black;
+    color: white;
+    background-color: #211e3a;
     padding: 10px;
 }
 
@@ -82,34 +79,45 @@ body, html{
 .navIButtom{
     width: 100%;
     padding: 10px 10px 10px 50px;
-    background-color: rgb(92, 87, 87, 0);
+    background-color: #52527e;
+    /* background-color: rgba(255, 255, 255, 50); */
+    color: rgba(255, 255, 255, 50);
     border: none;
     text-align: left;
+    cursor: pointer;
 }
 
 .navIButtom:hover{
-    color: #674CF3;
+    color: white;
+    cursor: pointer;
 }
 
 .active{
     font-weight: bold;
-    border-left: #674CF3 solid 5px;
+    border-left: white solid 5px;
+    color: white;
+}
+
+.link{
+    font-weight: bold;
+    cursor: pointer;
     color: #674CF3;
 }
 
 .category{
-    opacity: 50%;
+    color: white;
+    opacity: 30%;
     font-size: .9rem;
     padding: 30px 20px 5px 20px;
 }
 
 .categoryActive{
-    color: #1c1638;
-    opacity: 100%;
+    color: white;
+    opacity: 80%;
 }
 
 .content{
-    margin-left: 350px;
+    /* margin-left: 350px; */
     width: 100%;
 }
 
@@ -127,6 +135,14 @@ body, html{
     background-color: #ebebf5;
     padding: 6px 20px;
     border-radius: 4px;
+}
+
+.titleHeader{
+    align-items: left;
+}
+
+.titleDownload{
+    align-items: right;
 }
 
 @media only screen and (max-width: 768px) {
@@ -147,7 +163,7 @@ body, html{
     }
 
     .contentTitle{
-        padding: 5px 60px;
+        padding: 140px 60px 40px 60px;
     }
 
     .menuCollapse{
@@ -156,12 +172,12 @@ body, html{
 
     .menuButton{
         padding: 20px;
-        background-color:  #674CF3;
+        background-color:  #ffffff;
         border-radius: 10px;
-        color: white;
+        color: #2a2083;
         border-style: none;
         font-weight: bold;
- 
+        cursor: pointer;
     }
 
     .navList{
@@ -171,6 +187,12 @@ body, html{
     .content{
         margin-left: 0px;
     }
+
+    img{
+        max-width: 380px;
+        height: auto;
+    }
+
   }
 
   @media only screen and (min-width: 769px) {
