@@ -27,18 +27,8 @@ Si, por el contrario,  {% katex %}f(a).f(\frac {a+b}{2})<0{% endkatex %}. Entonc
 
 Sea {% katex %}f \epsilon C[a,b]{% endkatex %} supongamos que {% katex %}f(a).f(b)<0{% endkatex %} el procedimiento de bisección del algoritmo genera una sucesión {% katex %}{P_n}{% endkatex %} que aproxima a {% katex %}p{% endkatex %} con la propiedad {% katex %}|p_n-p|\leq\frac {b-a}{2^n}, n\geq1{% endkatex %}.
 
-*Ejemplo:* 
-Determine aproximadamente cuantas iteraciones son necesarias para resolver {% katex %}f(x)=x^3+4x^2-10{% endkatex %} con una precisión {% katex %}\varepsilon=10^{-5}{% endkatex %}  con {% katex %}[1,2]{% endkatex %}
 
-![5](/assets/images/5.png)
-
-.
-
-.
-
-.
-
-_____________________________
+______________________
 
 **Iteración de Punto Fijo**
 

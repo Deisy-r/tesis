@@ -35,24 +35,26 @@ ___
 *Ejemplo:* Determine el polinomio Interpolante de Newton que contiene los puntos {% katex %}(-3,9),(5,2),(7,-1){% endkatex %} y {% katex %}(8,0){% endkatex %}.
 
 *Solución:*
-| {% katex %}x_i{% endkatex %}  | {% katex %}y_i{% endkatex %}   | {% katex %}b_1{% endkatex %}  | {% katex %}b_2{% endkatex %}   |{% katex %}b_3{% endkatex %}   |
+
+
+| {% katex %}x_i{% endkatex %} |{% katex %}y_i{% endkatex %}  | {% katex %}b_1{% endkatex %}| {% katex %}b_2{% endkatex %}|{% katex %}b_3{% endkatex %}  |
 |--|--|--|--|--|
-| -3 | 9 | {% katex %}\frac{-7}{8}{% endkatex %} |{% katex %}\frac{-1}{16}{% endkatex %}  | {% katex %}\frac{-43}{528}{% endkatex %}
-| 5 | 2 |{% katex %}\frac{-3}{2}{% endkatex %}| {% katex %}\frac{5}{6}{% endkatex %}
-| 7 |-1  |1
-| 8 | 0 |
+| -3 | 9 | {% katex %}\frac{-7}{8}{% endkatex %}| {% katex %}\frac{-1}{16}{% endkatex %} | {% katex %}\frac{-43}{528}{% endkatex %} |
+| 5 | 2 | {% katex %}\frac{-3}{2}{% endkatex %} | {% katex %}\frac{5}{6}{% endkatex %} |  
+| 7 | -1 | 1 |  |  |
+| 8 | 0 |  |  |  |
 
 Para entender el algoritmo del polinomio interpolante de newton mediante las diferencias divididas, hagamos la construcción por niveles o columnas.
 
 Nivel {% katex %}b_1{% endkatex %}
 
-{% katex display %}b_1=\frac{2-9}{5-(-3)}=\frac{-7}{8}{% endkatex %}, 
-{% katex display %}\frac{(-1)-2}{7-5}=\frac{-3}{2}{% endkatex %}, 
+{% katex display %}b_1=\frac{2-9}{5-(-3)}=\frac{-7}{8},{% endkatex %} 
+{% katex display %}\frac{(-1)-2}{7-5}=\frac{-3}{2},{% endkatex %} 
 {% katex display %}\frac{0-(-1)}{8-7}=\frac{1}{1}=1{% endkatex %}
 
 Nivel {% katex %}b_2{% endkatex %}
 
-{% katex display %}b_2=\frac{\frac{-3}{2}-\frac{-7}{8}}{7-(-3)}=\frac{\frac{-5}{8}}{10}=\frac{-1}{16}{% endkatex %}, 
+{% katex display %}b_2=\frac{\frac{-3}{2}-\frac{-7}{8}}{7-(-3)}=\frac{\frac{-5}{8}}{10}=\frac{-1}{16},{% endkatex %}
 {% katex display %}\frac{1-\frac{-3}{2}}{8-5}=\frac{\frac{5}{2}}{3}=\frac{5}{6}{% endkatex %}
 
 Nivel {% katex %}b_3{% endkatex %} 

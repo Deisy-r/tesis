@@ -19,9 +19,9 @@ Donde
 ________
 Suponga que la función {% katex %}f{% endkatex %} es continuamente diferenciable dos veces en el intervalo cerrado {% katex %}[a,b]{% endkatex %}, es decir, {% katex %}f\in C^2[a,b]{% endkatex %}, sea {% katex %}x̄\in[a,b]{% endkatex %}, una aproximación a {% katex %}P{% endkatex %}, tal que {% katex %}f'(x̄)\neq0{% endkatex %} y {% katex %}|x̄-p|{% endkatex %} es "pequeño". 
 
-{% katex display %}f(x)=f(x̄)+(x-x̄)f'(x̄)+\frac{(x-x̄)^2}{2}f'(\xi(x)){% endkatex %}, {% katex %}x<\xi(x)<x̄{% endkatex %}
+{% katex display %}f(x)=f(x̄)+(x-x̄)f'(x̄)+\frac{(x-x̄)^2}{2}f'(\xi(x)), {% endkatex %} {% katex %}x<\xi(x)<x̄{% endkatex %}
 como {% katex %}f(p)=0{% endkatex %}
-{% katex display %}0=f(x̄)+(p-x̄)f'(x)+\frac{(p-)^2}{2}f'(\xi(x)){% endkatex %}, 
+{% katex display %}0=f(x̄)+(p-x̄)f'(x)+\frac{(p-)^2}{2}f'(\xi(x)),{% endkatex %} 
 {% katex display %}f(x̄)+(p-x̄)f'(x̄) \approx0{% endkatex %}
 {% katex display %}f(x̄)+pf'(x̄)-x̄f'(x̄) \approx0{% endkatex %}
 {% katex display %}pf'(x̄)\approx x̄f'(x̄)-f(x̄){% endkatex %}

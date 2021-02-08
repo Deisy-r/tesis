@@ -10,15 +10,18 @@ tag: 0
 **Fórmula de Newton-Cotes**
 Nombradas así por *Isaac Newton* y *Roger Cotes*, en las cuales se evalúa la función en puntos equidistantes, para así hallar un valor aproximado de la integral. Cuanto más intervalos se divida la función más preciso será el resultado.
 
-**Regla del Trapecio Simple y Compuesto**
+**Regla del Trapecio Simple**
+
+
 La regla del trapecio es la primera regla cerrada del Newton-Cotes. 
 Gráficamente:
+
+
 ![Regla De Los Trapecios](https://userscontent2.emaze.com/images/514d0b1f-1b44-412c-b275-a762667c3dc1/ecab57c3-f717-4c1f-8641-d700e8303044png)
-Donde: {% katex %}P_1(a,f(a)){% endkatex %} y {% katex %}P_2(b,f(b)){% endkatex %}. 
 
-Si utilizamos un polinomio {% katex %}p(x){% endkatex %} de primer grado como una aproximación de la función, es decir, {% katex %}p(x)=f(a)\frac{x-b}{a-b}+f(b)\frac{x-a}{b-a}{% endkatex %}.
 
-El cual equivale a {% katex %}p(x)=f(a)+\frac{f(b)-f(a)}{b-a}(x-a){% endkatex %} , {% katex %}f(x)=mx+b{% endkatex %}.
+
+Donde: {% katex %}p(x)=f(a)+\frac{f(b)-f(a)}{b-a}(x-a){% endkatex %} , {% katex %}f(x)=mx+b{% endkatex %}.
 
 El área bajo esta linea recta es una aproximación del área bajo la curva entre los limites {% katex %}a{% endkatex %} y {% katex %}b{% endkatex %}.
 
@@ -28,47 +31,72 @@ El área bajo esta linea recta es una aproximación del área bajo la curva entr
 
 {% katex display %}\approx(b-a)\frac{f(a)+f(b)}{2}{% endkatex %}
 
-**Método de Simpson**
-También llamada *Regla de Kepler*, es un método de integración numérica que se utiliza para obtener la aproximación de la integral: 
 
-{% katex display %}\int^b_af(x)d_x\approx\frac{b-a}{6}[(f(a)+4f(\frac{a+b}{2})+f(b)]{% endkatex %}
+Una estimación al **error de truncamiento local** para una sola aplicación de la regla del trapecio es
 
-Consideremos el polinomio interpolante de *orden 2* {% katex %}P_2(x){% endkatex %}, que aproxima la función integrando {% katex %}f(x){% endkatex %} entre los nodos {% katex %}x_0=a{% endkatex %}, {% katex %}x_1=b{% endkatex %} y {% katex %}m=(\frac{a+b}{2}){% endkatex %}.
+{% katex display %}E_t=-\frac{1}{12}f''(\xi)(b-a)^3{% endkatex %}
 
-La expresión de ese polinomio interpolante, espesado a través de la interpolación polinómica de *Lagrange* es:
 
-{% katex display %}P_2(x)=f(a)\frac{(x-m)(x-b)}{(a-m)(a-b)}+f(m)\frac{(x-a)(x-b)}{(m-a)(m-b)}+f(b)\frac{(x-a)(x-a)}{(b-a)(b-a)}{% endkatex %}
+Donde {% katex d%}\xi{% endkatex %} está en algun lugar en el intervalo de {% katex %}a{% endkatex %} a {% katex %}b{% endkatex %} 
 
-Así la integral buscada {% katex %}I=\int^b_af(x)d_x{% endkatex %}
 
-Es equivalente a {% katex %}I=\int^b_aP_2(x)d_x+Término De Error=\frac{b-a}{6}[f(a)+4f(m)+f(b)]+\varepsilon(f){% endkatex %}.
+**Regla del Trapecio Compuesto**
 
-Donde {% katex %}\varepsilon(f){% endkatex %} es el *Termino de Error*, por lo tanto se puede aproximar a como: 
 
-{% katex display %}\int^b_af(x)d_x\approx\frac{b-a}{6}{6}[f(a)+4f(m)+f(b)]+{% endkatex %}
+Una forma de mejorar la precisión de la regla del trapecio consiste en dividir el intervalo de integración de a a b en varios segmentos, y aplicar el método a cada uno de ellos. Las áreas de los segmentos se suman después para obtener la integral en todo el intervalo.
 
-**Tipos de Formulas de *Newton-Cotes***
-**ABIERTAS:**
-Se usan los nodos {% katex %}x=x_0+ih{% endkatex %} para cada {% katex %}i=0,1,2,...,n{% endkatex %}, donde {% katex %}h=\frac{b-a}{n+2}{% endkatex %} ^ {% katex %}x_0=a+h{% endkatex %}
-Esto implica que {% katex %}x_n=b-h{% endkatex %}
 
-Si marcamos los puntos extremos tomando {% katex %}x_{-1}=a{% endkatex %} y {% katex %}x_{n+1}=b{% endkatex %}
+{% katex display %}I=(b-a)\frac{f(x_0)+2\sum^{n-1}_{i=1}f(x_i)+f(x_n)}{2n}{% endkatex %}
 
-Las formulas se transforman en:
-{% katex display %}\int^b_af(x)d_x\approx\int^{x_{n+1}}_{-1}f(x)d_x\approx\sum^n_{i=0}a_if(x_i){% endkatex %}
-
-Donde {% katex %}a_i=\int^b_aL_i(x)d_x{% endkatex %}
-
-{% katex display %}\sum^3_{i=0}a_if(x_i)=a_0f(x_0)+a_1f(x_1)+a_2f(x_2)+a_3f(x_3){% endkatex %}
-
-**CERRADAS:**
-
- - Regla del Trapecio para {% katex %}N=1{% endkatex %}
-{% katex display %}\int^{x_1}_{x_0}f(x)d_x\approx\frac{h}{2}[f(x_0)+f(x_1)]-\frac{h^3}{12}f^{''}(\xi){% endkatex %} , {% katex %}x_0<\xi<x_1{% endkatex %}.  
- - Regla de Simpson para {% katex %}N=2{% endkatex %}
-{% katex display %}\int^{x_1}_{x_0}f(x)d_x\approx\frac{h}{3}[f(x_0)+4f(x_1)+f(x_2)]-\frac{h^3}{90}f^{(4)}(\xi){% endkatex %} , {% katex %}x_0<\xi<x_2{% endkatex %}.  
+Para estimar el error aproximado
+{% katex display %}E_a=\frac{(b-a)^3}{12n^2}f''{% endkatex %}
  
-- Regla de Simpson Tres Octavos
-{% katex display %}\int^{x_3}_{x_0}f(x)d_x\approx\frac{3h}{8}[f(x_0)+3f(x_1)+3f(x_2)+f(x_3)]-\frac{3h^3}{80}f^{(4)}(\xi){% endkatex %} , {% katex %}x_0<\xi<x_3{% endkatex %}.  
- - {% katex %}N=4{% endkatex %}
- {% katex display %}\int^{x_4}_{x_0}f(x)d_x\approx\frac{2h}{45}[7f(x_0)+32f(x_1)+12f(x_2)+32f(x_3)+7f(x_4)]-\frac{-8h^7}{945}f^{(6)}(\xi){% endkatex %} , {% katex %}x_0<\xi<x_4{% endkatex %}.  
+
+
+**Regla de Simpson**{% katex %}\frac{1}{3}{% endkatex %}
+
+
+Resulta cuando un polinomio de interpolación de segundo grado se sustituyr en la ecuación: 
+
+{% katex display %}\int^b_af(x)d_x\approx \int^b_af_2(x)d_x{% endkatex %}
+
+Expresandose
+
+{% katex display %}I=(b-a)\frac{f(x_0)+4f(x_1)+f(x_2)}{6}{% endkatex %}
+
+Donde {% katex %}a=x_0, b=x_2{% endkatex %} y {% katex %}x_1={% endkatex %} el punto a la mitad entre {% katex %}a {% endkatex %} y {% katex %} b{% endkatex %},que esta dado por {% katex %}\frac{(b-a)}{2}{% endkatex %}
+
+La aplicación de esta regla tiene un error de truncamiento con 
+
+{% katex display %}E_t=-\frac{(b-a)^5}{2880}f^{(4)}(\xi){% endkatex %}
+
+Donde {% katex %}\xi{% endkatex %}está en algún lugar en el intervalo de {% katex %}a {% endkatex %} a {% katex %} b{% endkatex %}
+
+
+
+**Regla de Simpson**{% katex %}\frac{1}{3}{% endkatex %}**de aplicación múltiple**
+
+
+Así como en la regla del trapecio, la regla de Simpson se mejora al dividir el intervalo de integración en varios segmentos de un mismo tamaño
+{% katex display %}I \cong (b-a) \frac{f(x_0)+4 \sum ^{(n-1)}_{i=1,3,5}f(x_i)+2 \sum ^{(n-2)}_{j=2,4,6}f(x_j)+f(x_n)}{3n}{% endkatex %}
+
+
+Un **error estimado en la regla de Simpson de aplicación múltiple** se obtiene de la misma forma que en la regla del trapecio: sumando los errores individuales de los segmentos y sacando el promedio de la derivada para llegar a 
+
+{% katex display %}E_a=-\frac{(b-a)^5}{180n^4}f^{(4)}{% endkatex %}
+
+Donde {% katex %}f^{(4)}{% endkatex %} es el promedio de la cuarta derivada en el intervalo.
+
+
+
+**Regla de Simpson**{% katex %}\frac{3}{8}{% endkatex %}
+
+De manera similar a la obtención de la regla del trapecio y Simpson 1/3, es posible ajustar un polinomio de Lagrange de tercer grado a cuatro puntos e integrarlo:
+
+{% katex display %}I \cong (b-a) \frac{f(x_0)+3f(x_1)+3f(x_2)+f(x_3)}{8}{% endkatex %}
+
+Así los dos puntos interiores tienen pesos de tres octavos, mientras que los puntos extremos tienen un peso de un octavo. La regla de Simpson 3/8 tiene un error de:
+
+
+{% katex display %}E_t=-\frac{(b-a)^5}{6480}f^{(4)}(\xi){% endkatex %}
+
