@@ -390,21 +390,47 @@ Magenta, m, [1 0 1]
 Un bloque **for** en cada iteración asigna a la variable la columna i-ésima de la expresión y ejecuta las órdenes. En la práctica las expresiones suelen ser del tipo escalar: escalar en cuyo caso las 
 columnas son escalares.
 
-{% katex display %}
->>for variable = expresión
-<orden>
-…
-<orden>
-end
 
-{% endkatex %}
+> > for variable = expresión
+
+
+> > \<orden>
+
+
+> >…
+
+
+> > \<orden>
+
+
+> >end
+
+
 
 **Sentencia WHILE**
 
 Un bloque while ejecuta las órdenes mientras todos los elementos de la expresión sean verdaderos.
 
 
-> > ** Mientras ** <Expresión> \ < Orden > \ < Orden > \ ... \ < Orden > ** Fin **
+> > Mientras 
+
+
+> > \<Expresión> 
+
+
+> > \< Orden > 
+
+
+> >\< Orden > 
+
+
+> >... 
+
+
+> > \< Orden > 
+
+
+> > Fin 
 
 
 **Sentencia IF**
@@ -412,40 +438,66 @@ Un bloque while ejecuta las órdenes mientras todos los elementos de la expresi�
 Un bloque **if** puede escribirse de varias maneras distintas. Lo que hace es evaluar una expresión lógica y si es cierta ejecuta las órdenes que encuentre antes del **end**.
 
 
->>**if **<expresión>
-<órdenes evaluadas si la expresión es verdadera >
+> > if \<expresión>
 
 
-**end**
+> > \<órdenes evaluadas si la expresión es verdadera>
+
+
+> > end
 
 Puede que nos interese que en caso de no ejecutar dicha orden ejecute otra distinta. Esto se lo indicaremos usando **else** dentro del bloque.
 
 
->>**if** <expresión>
-<órdenes evaluadas si la expresión es verdadera >
+> > if \<expresión>
 
 
-**else**
+> > \<órdenes evaluadas si la expresión es verdadera>
 
-<órdenes evaluadas si la expresión es falsa >
 
-**end**
+> > else
+
+
+> > \<órdenes evaluadas si la expresión es falsa>
+
+
+> > end
+
 
 Si queremos dar una estructura mucho más completa, usaremos la más general donde sólo se evalúan las órdenes asociadas con la primera expresión verdadera de todas. En cuanto la evalúe deja de leer el resto y se dirige directamente al **end**.
 
 
->>**if** <expresión1>
-<órdenes evaluadas si la expresión1 es verdadera >
-**elseif** <expresión2>
-<órdenes evaluadas si la expresión2 es verdadera >
-**elseif**<expresión3>
-<órdenes evaluadas si la expresión3 es verdadera >
-**elseif**
-…
-…
-**else**
-<órdenes evaluadas si ninguna otra expresión es verdadera >
-**end**
+> > if \<expresión1>
+
+
+> > \<órdenes evaluadas si la expresión1 es verdadera >
+
+
+> > elseif \<expresión2>
+
+
+> > \<órdenes evaluadas si la expresión2 es verdadera >
+
+
+> > elseif \<expresión3>
+
+
+> > \<órdenes evaluadas si la expresión3 es verdadera >
+
+
+> > elseif
+
+
+> > …
+
+
+> > else
+
+
+> > \<órdenes evaluadas si ninguna otra expresión es verdadera >
+
+
+> > end
 
 
 **Sentencia BREAK**
@@ -466,7 +518,7 @@ Un fichero de comandos contiene simplemente un conjunto de comandos que se ejecu
 Las funciones permiten definir funciones análogas a las de Matlab, con su nombre, argumentos y valores de salida. La primera línea que no sea comentario debe empezar por la palabra **function**, seguida por los valores de salida (entre corchetes [ ] y separados por comas si hay más de uno), el signo igual (=) y el nombre de la función seguido de los argumentos (entre paréntesis ( ) y separados por comas):
 
 
->>Function [a,b,c]= nombre_función (x,y,z)
+> > Function [a,b,c]= nombre_función (x,y,z)
 
 
 En las líneas siguientes escribimos los argumentos de salida a partir de los de entrada. El nombre de la función y el nombre del archivo deben ser idénticos y no empezar por cifra sino por letra.
@@ -476,6 +528,7 @@ Todas las variables dentro de una función se aíslan del espacio de trabajo de 
 El número de variables de entrada pasadas a una función está disponible dentro de la función en la variable **nargin** y el número de variables de salida solicitadas cuando una función es llamada, está disponible dentro de la función en la variable **nargout**.
 
 Debemos tener siempre en cuenta que los argumentos pueden ser vectores, luego si queremos que las operaciones se hagan elemento a elemento y no vectorialmente debemos usar el punto.
+
 
 **ANÁLISIS DE DATOS**
 
@@ -516,16 +569,35 @@ Matlab trabaja con los polinomios como vectores fila y con las raíces como vect
 Ejemplo:
 
 
->>p=[1  -9  13  9  -14]; %representa al polinomio 𝑥4−9𝑥3+13𝑥2−9𝑥−14
->>roots (p) %calcula sus raíces
-ans=
-7.0000
--1.0000
-2.0000
-1.0000
->> poly (ans) %devuelve el polinomio generado por esas cuatro raíces
-ans=
-1.0000   -9.0000   13.0000   9.0000   -14.0000
+> > p=[1  -9  13  9  -14]; %representa al polinomio 𝑥4−9𝑥3+13𝑥2−9𝑥−14
+
+
+> > roots (p) %calcula sus raíces
+
+
+> > ans=
+
+
+> > 7.0000
+
+
+> > -1.0000
+
+
+> > 2.0000
+
+
+> > 1.0000
+
+
+> > poly (ans) %devuelve el polinomio generado por esas cuatro raíces
+
+
+> > ans=
+
+
+> > 1.0000   -9.0000   13.0000   9.0000   -14.0000
+
 
 
 **Otras características**
@@ -572,9 +644,13 @@ Si tenemos un fichero ***.m**, lo primero que debemos hacer es asegurarnos de qu
 Ahora debemos situarnos en el directorio donde tengamos el fichero que queremos transformar usando el comando **cd**, por ejemplo:
 
 
->> cd 'C:\Documents and Settings\Escritorio\Prueba'
+> > cd 'C:\Documents and Settings\Escritorio\Prueba'
+
+
 Lo que debemos escribir a continuación es el comando mcc seguido de –m y el nombre del fichero:
->> mcc -m nombre
+
+
+> > mcc -m nombre
 
 
 Con esto nos aparecerá en el mismo directorio donde estamos un ejecutable con el mismo nombre. También aparecerán una carpeta y varios archivos.

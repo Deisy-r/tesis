@@ -1,12 +1,11 @@
 ---
 layout: post
-title:  "Método de Taylor"
+title:  "Teorema de Taylor"
 date:   2020-09-10 18:51:43 -0400
 categories: senluv
 tag: 4
 ---
 
-## Teorema de Taylor
 
 Supongamos que {% katex %}f\in C^n[a,b]{% endkatex %} y {% katex %}f^{n+1}{% endkatex %} existe en {% katex %}[a,b]{% endkatex %}. Sea {% katex %}x_o\in[a,b]{% endkatex %} para todo {% katex %}x\in[a,b]{% endkatex %}, existe {% katex %}\xi(x){% endkatex %} entre {% katex %}x_0^x{% endkatex %}
 
@@ -33,4 +32,4 @@ Una sucesión {% katex %}{p_n}{% endkatex %} definida por:
 {% katex display %}p_n=p_{n-1}\frac{f(p_{n-1})}{f'(p_{n-1)}}{% endkatex %} donde {% katex %}n>1{% endkatex %}
 
 **Teorema**
-Sea {% katex %}f\in C^2[a,b]{% endkatex %}. Si {% katex %}p\in[a,b]{% endkatex %}, es tal que {% katex %}f(p)=0{% endkatex %} y {% katex %}f(p)\neq0{% endkatex %}, entonces existe {% katex %}\delta>0{% endkatex %} tal que el *Método de Newton* genrea una sucesión {% katex %}(p)^\infty n=1{% endkatex %} que converge a {% katex %}p{% endkatex %} para cualquier aproximación inicial {% katex %}p_0 \in[p-\delta_1p+\delta]{% endkatex %}
+Sea {% katex %}f\in C^2[a,b]{% endkatex %}. Si {% katex %}p\in[a,b]{% endkatex %}, es tal que {% katex %}f(p)=0{% endkatex %} y {% katex %}f(p)\neq0{% endkatex %}, entonces existe {% katex %}\delta>0{% endkatex %} tal que el *Método de Newton* genera una sucesión {% katex %}(p)^\infty n=1{% endkatex %} que converge a {% katex %}p{% endkatex %} para cualquier aproximación inicial {% katex %}p_0 \in[p-\delta_1p+\delta]{% endkatex %}

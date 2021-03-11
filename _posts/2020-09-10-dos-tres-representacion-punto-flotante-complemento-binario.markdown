@@ -7,7 +7,7 @@ tag: 3
 ---
 **Complemento Binario**
 
-Sea {% katex %} A {% endkatex %} un número binario el complemento a unos de {% katex %} A {% endkatex %} se obtiene restando {% katex %} 1 {% endkatex %} a cada digito de {% katex %} A {% endkatex %} y el complemento a dos de {% katex %} A {% endkatex %} es su complemento a {% katex %} 1 {% endkatex %} más {% katex %} 1 {% endkatex %}.
+Sea {% katex %} A {% endkatex %} un número binario el complemento a unos de {% katex %} A {% endkatex %} se obtiene restando {% katex %} 1 {% endkatex %} a cada dígito de {% katex %} A {% endkatex %} y el complemento a dos de {% katex %} A {% endkatex %} es su complemento a {% katex %} 1 {% endkatex %} más {% katex %} 1 {% endkatex %}.
 
 {% katex display %}A= 1 1 1 1 0 0 0 0 1 1 1 1_2 {% endkatex %}
 
@@ -27,6 +27,8 @@ Sea
 
 {% katex display %}64+9=73=1001001_2{% endkatex %} exponente
 
-![binario](/assets/images/binario.png) dentro de ese rango se colocan los ceros hasta que se completan los *64 bits*
+![binario](/assets/images/binario.png) 
+
+Dentro de ese rango se colocan los ceros hasta que se completan los *64 bits*
 
 

@@ -6,6 +6,7 @@ categories: rpf
 tag: 2
 ---
 **REPRESENTACION ENTERA**
+
 Los enteros o números en punto fijo son números que no tienen punto decimal. Un entero **J** se representa en la memoria de un computador por medio de su forma binaria si son positivos y por medio de su complemento a **2** de su valor absoluto. 
 
 
@@ -16,7 +17,7 @@ Los enteros o números en punto fijo son números que no tienen punto decimal. U
 
 ![entera](/assets/images/entera.png)
 
- El computador almacena {% katex %}-423{% endkatex %} en una localización de memoria, tomando el complemento a {% katex %}1{% endkatex %} de la anterior representación {% katex %}423{% endkatex %} y sumándole un {% katex %}1{% endkatex %} el computador puede saber si un entero **J** en la memoria es positivo o negativo minando el primer digito. 
+ El computador almacena {% katex %}-423{% endkatex %} en una localización de memoria, tomando el complemento a {% katex %}1{% endkatex %} de la anterior representación {% katex %}423{% endkatex %} y sumándole un {% katex %}1{% endkatex %} el computador puede saber si un entero **J** en la memoria es positivo o negativo minando el primer dígito. 
 
 
 Si {% katex %}J=0\rightarrow + {% endkatex %}
