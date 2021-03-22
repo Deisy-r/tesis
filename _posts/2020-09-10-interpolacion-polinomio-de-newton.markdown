@@ -7,8 +7,10 @@ tag: 1
 ---
 
 
-Este método es algorítmico y resulta sumamente como en determinados casos, sobre todo cuando se requiere calcular un polinomio interpolador de grado elevado.
+Este método es algorítmico y resulta sumamente extenso como en determinados casos, sobre todo cuando se requiere calcular un polinomio interpolador de grado elevado.
 Para un polinomio de *n-esimo* orden se requiere de 
+
+
 {% katex %}(x_0,f(x_0)), (x_1,f(x_1)), ..., (x_n,f(x_n)){% endkatex %}. 
 
 Con la Siguiente formula: 
@@ -27,22 +29,21 @@ El cálculo de todos los términos intermedios debe realizarse simplemente porqu
 La construcción del polinomio interpolador son aquellos que involucren a {% katex %}x_0{% endkatex %}. 
 {% katex display %}b_0=f[x_0], b_1=f[x_0,x_1],...,b_i=f[x_0,x_1,...,x_i]{% endkatex %}
 
-Con esta notación podemos expresar el polinomio $p_n(x)$ con:
+Con esta notación podemos expresar el polinomio {% katex %}p_n(x){% endkatex %} con:
+
+
 {% katex display %}p_n(x)=[x_0]+f[x_0,x_1](x-x_0)+f[x_0,x_1,...,x_n](x-x_0)(x-x_1)...(x-x_{n-1}){% endkatex %}
 
 A esta ecuación se conoce con el nombre de *Formula de diferencias Divididas Interpolantes de Newton* 
+
+
 ___
-*Ejemplo:* Determine el polinomio Interpolante de Newton que contiene los puntos {% katex %}(-3,9),(5,2),(7,-1){% endkatex %} y {% katex %}(8,0){% endkatex %}.
+*Ejemplo:* Determine el polinomio Interpolante de Newton que contiene los puntos {% katex %}(-3,9),(5,2),(7,-1),(8,0){% endkatex %}
 
 *Solución:*
 
+![tabla](/assets/images/newton interpolante tabla.png)
 
-| {% katex %}x_i{% endkatex %} |{% katex %}y_i{% endkatex %}  | {% katex %}b_1{% endkatex %}| {% katex %}b_2{% endkatex %}|{% katex %}b_3{% endkatex %}  |
-|--|--|--|--|--|
-| -3 | 9 | {% katex %}\frac{-7}{8}{% endkatex %}| {% katex %}\frac{-1}{16}{% endkatex %} | {% katex %}\frac{-43}{528}{% endkatex %} |
-| 5 | 2 | {% katex %}\frac{-3}{2}{% endkatex %} | {% katex %}\frac{5}{6}{% endkatex %} |  
-| 7 | -1 | 1 |  |  |
-| 8 | 0 |  |  |  |
 
 Para entender el algoritmo del polinomio interpolante de newton mediante las diferencias divididas, hagamos la construcción por niveles o columnas.
 

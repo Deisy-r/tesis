@@ -11,15 +11,11 @@ tag: 5
 
 La derivación de estos métodos se acompaña de la suposición de un algoritmo particular con ciertos coeficientes indeterminados. Los valores de estos términos constantes se encuentran igualando la fórmula de Runge-Kutta de orden {% katex %}p{% endkatex %} al algoritmo de Taylor de orden {% katex %}p{% endkatex %}. La idea general es sustituir el problema de valor inicial: 
 
-{% katex display %}
-	AAAAAAAA
-{% endkatex %}
+![runge kutta](/assets/images/runge kutta 1.png)
 
 Por la ecuación integral equivalente:
 
-{% katex display %}
-	AAAAAAAAAAAAAAAA2222
-{% endkatex %}
+![kutta](/assets/images/runge kutta 2.png)
 
 Para proceder a aproximar esta última integral mediante un método numérico adecuado (recordemos que {% katex %}y(x){% endkatex %} es desconocida). Si nuevamente planteamos el problema “paso a paso” tendremos: 
 
@@ -33,7 +29,7 @@ Para proceder a aproximar esta última integral mediante un método numérico ad
 	Se deducen de una manera similar a la de tercer orden, con la diferencia que se introduce un nuevo paso intermedio en la evaluación de la derivada. El mas habitual es el determinado por las formulas siguientes: 
 
 
-
+![4to](/assets/images/4to orden.png)
 
 
 	Que al igual que el método de tercer orden está basado en el *método de interacción de Simpson*. Los errores local y global son en este caos proporcionales a {% katex %}h^5{% endkatex %}y  {% katex %}h^4{% endkatex %} respectivamente. 

@@ -7,7 +7,8 @@ tag: 0
 ---
 
 
-**Fórmula de Newton-Cotes**
+## Fórmula de Newton-Cotes
+
 Nombradas así por *Isaac Newton* y *Roger Cotes*, en las cuales se evalúa la función en puntos equidistantes, para así hallar un valor aproximado de la integral. Cuanto más intervalos se divida la función más preciso será el resultado.
 
 **Regla del Trapecio Simple**
@@ -53,10 +54,10 @@ Para estimar el error aproximado
  
 
 
-**Regla de Simpson**{% katex %}\frac{1}{3}{% endkatex %}
+**Regla de Simpson** {% katex %}\frac{1}{3}{% endkatex %}
 
 
-Resulta cuando un polinomio de interpolación de segundo grado se sustituyr en la ecuación: 
+Resulta cuando un polinomio de interpolación de segundo grado se sustituye en la ecuación: 
 
 {% katex display %}\int^b_af(x)d_x\approx \int^b_af_2(x)d_x{% endkatex %}
 
@@ -74,7 +75,7 @@ Donde {% katex %}\xi{% endkatex %}está en algún lugar en el intervalo de {% ka
 
 
 
-**Regla de Simpson**{% katex %}\frac{1}{3}{% endkatex %}**de aplicación múltiple**
+**Regla de Simpson** {% katex %}\frac{1}{3}{% endkatex %} **de aplicación múltiple**
 
 
 Así como en la regla del trapecio, la regla de Simpson se mejora al dividir el intervalo de integración en varios segmentos de un mismo tamaño
@@ -89,7 +90,7 @@ Donde {% katex %}f^{(4)}{% endkatex %} es el promedio de la cuarta derivada en e
 
 
 
-**Regla de Simpson**{% katex %}\frac{3}{8}{% endkatex %}
+**Regla de Simpson** {% katex %}\frac{3}{8}{% endkatex %}
 
 De manera similar a la obtención de la regla del trapecio y Simpson 1/3, es posible ajustar un polinomio de Lagrange de tercer grado a cuatro puntos e integrarlo:
 
